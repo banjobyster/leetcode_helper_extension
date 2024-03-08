@@ -87,8 +87,12 @@ const Downloader = () => {
                         return getDataRest(problemPathnameArray);
                     });
 
-                    const problemResponses = await Promise.all(problemPromises);
-                    problemResponses.forEach((problem) => problems.push(problem));
+                    const problemResponses = await Promise.allSettled(problemPromises);
+                    problemResponses.forEach((problem) => {
+                        if (problem.status === 'fulfilled') {
+                            problems.push(problem.value);
+                        }
+                    });
 
                 } catch (error) {
                     console.dir(error);

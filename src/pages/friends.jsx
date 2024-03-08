@@ -31,35 +31,30 @@ const Friends = () => {
             const variables = { "username": friend };
             const operationName = 'globalDataQuery';
 
-            try {
-                const response = await fetch(graphqlEndpoint, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        query: graphqlQuery,
-                        variables,
-                        operationName,
-                    }),
-                });
+            const response = await fetch(graphqlEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    query: graphqlQuery,
+                    variables,
+                    operationName,
+                }),
+            });
 
-                if (!response.ok) {
-                    throw new Error(`GraphQL request failed with status ${response.status}`);
-                }
-
-                const res = await response.json();
-
-                return {
-                    name: res.data.matchedUser.profile.realName !== "" ? res.data.matchedUser.profile.realName : friend,
-                    avatar: res.data.matchedUser.profile.userAvatar,
-                    rating: res.data?.userContestRanking?.rating ?? 0,
-                    username: friend,
-                };
-            } catch (error) {
-                console.error(`Error fetching data for ${friend}: ${error.message}`);
-                return null;
+            if (!response.ok) {
+                throw new Error(`GraphQL request failed with status ${response.status}`);
             }
+
+            const res = await response.json();
+
+            return {
+                name: res.data.matchedUser.profile.realName !== "" ? res.data.matchedUser.profile.realName : friend,
+                avatar: res.data.matchedUser.profile.userAvatar,
+                rating: res.data?.userContestRanking?.rating ?? 0,
+                username: friend,
+            };
         };
 
         const promises = LC_HELPER_FRIEND_LIST?.map((friend) => fetchFriendData(friend));

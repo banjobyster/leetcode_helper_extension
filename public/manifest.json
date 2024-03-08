@@ -15,7 +15,8 @@
   "permissions": [
     "activeTab",
     "downloads",
-    "storage"
+    "storage",
+    "https://*.leetcode.com/*"
   ],
   "content_scripts": [
     {
