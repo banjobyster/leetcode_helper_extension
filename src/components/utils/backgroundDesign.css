@@ -1,0 +1,70 @@
+/* Credit: https://codepen.io/Sepion/pen/ZQJyeq */
+#background-design {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #home {
+    clip-path: url(#cache);
+  }
+  
+  #red {
+    fill: none;
+    opacity: 0.15;
+    stroke: #CE1B5F;
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+    animation: show 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+    animation: show 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #light-blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: draw 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes show {
+    0% {
+      opacity: 0.2;
+    }
+  
+    50% {
+      opacity: 0.1;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+  }

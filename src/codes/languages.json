@@ -1,0 +1,147 @@
+{
+    "cpp": {
+        "id": 0,
+        "formatted_name": "C++",
+        "extension": "cpp"
+    },
+    "java": {
+        "id": 1,
+        "formatted_name": "Java",
+        "extension": "java"
+    },
+    "python": {
+        "id": 2,
+        "formatted_name": "Python",
+        "extension": "py"
+    },
+    "python3": {
+        "id": 11,
+        "formatted_name": "Python3",
+        "extension": "py"
+    },
+    "mysql": {
+        "id": 3,
+        "formatted_name": "MySQL",
+        "extension": "sql"
+    },
+    "mssql": {
+        "id": 14,
+        "formatted_name": "MSSQL",
+        "extension": "sql"
+    },
+    "oraclesql": {
+        "id": 15,
+        "formatted_name": "OracleSQL",
+        "extension": "sql"
+    },
+    "c": {
+        "id": 4,
+        "formatted_name": "C",
+        "extension": "c"
+    },
+    "csharp": {
+        "id": 5,
+        "formatted_name": "C#",
+        "extension": "cs"
+    },
+    "javascript": {
+        "id": 6,
+        "formatted_name": "JavaScript",
+        "extension": "js"
+    },
+    "typescript": {
+        "id": 20,
+        "formatted_name": "TypeScript",
+        "extension": "ts"
+    },
+    "bash": {
+        "id": 8,
+        "formatted_name": "Bash",
+        "extension": "sh"
+    },
+    "php": {
+        "id": 19,
+        "formatted_name": "PHP",
+        "extension": "php"
+    },
+    "swift": {
+        "id": 9,
+        "formatted_name": "Swift",
+        "extension": "swift"
+    },
+    "kotlin": {
+        "id": 13,
+        "formatted_name": "Kotlin",
+        "extension": "kt"
+    },
+    "dart": {
+        "id": 24,
+        "formatted_name": "Dart",
+        "extension": "dart"
+    },
+    "golang": {
+        "id": 10,
+        "formatted_name": "Go",
+        "extension": "go"
+    },
+    "ruby": {
+        "id": 7,
+        "formatted_name": "Ruby",
+        "extension": "rb"
+    },
+    "scala": {
+        "id": 12,
+        "formatted_name": "Scala",
+        "extension": "scala"
+    },
+    "html": {
+        "id": 16,
+        "formatted_name": "HTML",
+        "extension": "html"
+    },
+    "pythonml": {
+        "id": 17,
+        "formatted_name": "PythonML",
+        "extension": "py"
+    },
+    "rust": {
+        "id": 18,
+        "formatted_name": "Rust",
+        "extension": "rs"
+    },
+    "racket": {
+        "id": 21,
+        "formatted_name": "Racket",
+        "extension": "rkt"
+    },
+    "erlang": {
+        "id": 22,
+        "formatted_name": "Erlang",
+        "extension": "erl"
+    },
+    "elixir": {
+        "id": 23,
+        "formatted_name": "Elixir",
+        "extension": "ex"
+    },
+    "pythondata": {
+        "id": 25,
+        "formatted_name": "PythonData",
+        "extension": "py"
+    },
+    "react": {
+        "id": 26,
+        "formatted_name": "React",
+        "extension": "jsx"
+    },
+    "vanillajs": {
+        "id": 27,
+        "formatted_name": "VanillaJS",
+        "extension": "js"
+    },
+    "postgresql": {
+        "id": 28,
+        "formatted_name": "PostgreSQL",
+        "extension": "sql"
+    }
+}
